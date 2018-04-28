@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../images/crystal.jpg");
+}
+
+.nameOfGame {
+    margin: 0 auto 10px;
+    width: 50%;
+    text-align: center;
+    background-color: blueviolet;
+    border: 3px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.instructions {
+    margin: 0 auto 10px;
+    width: 70%;
+    text-align: center;
+    background-color:white;
+    border: 3px solid  blue;
+    border-radius: 10px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+
+}
+
+
+.targetScore {
+    float: center;
+    left: 50%;
+    margin: 0 auto 10px;
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    background-color: blue;
+    border: 3px solid white;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+
+.winsLoses {
+    
+    margin: 0 auto 10px;
+    width: 25%;
+    /*height: 100px;*/
+    text-align: center;
+    background-color:rgb(43, 153, 226);
+    border: 3px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+
+#buttons {
+    clear: left;
+    margin: 0 auto 10px;
+    width: 70%;
+    height: 150px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.totalScore {
+    margin: 0 auto 10px;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(43, 153, 226);
+    border: 3px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.scoreCounter {
+    margin: 0 auto 10px;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    background-color: blueviolet;
+    border: 3px solid white;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
