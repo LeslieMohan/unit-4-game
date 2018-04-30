@@ -3,27 +3,36 @@
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <!--link to css-->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Gaegu|Monoton" rel="stylesheet"/>
+        <!--link to jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+
+        <!-- link to Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        
         <title>unit-4-game</title>
 </head>
 <body>
-
-     <div class="nameOfGame">
+    <div class="row">
+        <header class="nameOfGame col-lg-10 col-md-10 col-sm-10 col-xs-10">
             <h1>Crystal Collector!</h1>
+        </header>
     </div>
-
-    <div class="instructions">
+    <div class="row">
+        <div class="instructions col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <p>
             You will be given a random number at the start of the game.
         </p>
         
         <p>
-            There are four crystals below. By clicking on a crystal you will add a specific ammount of points to your total score.
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
         </p>
         
         <p>
-            You win the game by matching your total score to tandom number, you lose the game if your total score goes above the random number.
+            You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
         </p>
         <p>   
             The value of each crystal is hidden from you until you click on it.
@@ -32,29 +41,38 @@
             Each time when the game starts, the game will change the values of each crystal.
         </p>
         
+        </div>
     </div>
-    
-        <div class="targetScore">
-            <p>50</p>
+
+    <div class ="row">
+        
+        <div class="targetScore col-lg-3 col-md-3 col-sm-4 col-xs-4">
+            <p id="sentence">The target number is:</p>
+            <p id="targetNumber"></p>
         </div>
 
-        <div class="winsLoses">
-            <p>Wins:_   loses: _</p>
+        <div class="results col-lg-3 col-md-3 col-sm-4 col-xs-4">
+            <p>Number of Wins:</p>
+            <p id="wins">0</p>
+            <p>Number of Loses:</p>
+            <p id="loses">0</p>
+        </div>               
+
+        <div class="userScoreCounter col-lg-3 lg-centered col-md-3 col-sm-4 col-xs-4">00</div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="crystal col-lg-12 col-md-12 col-sm-12 col-xs-6">
+            <button class="gems" id="jewel1"></button>
+            <button class="gems" id="jewel2"></button>
+            <button class="gems" id="jewel3"></button>
+            <button class="gems" id="jewel4"></button>
         </div>
+    </div>
+
     
-    <div id="buttons">
-            <button id="button-#1"></button>
-
-    </div>
-
-    <div class="totalScore">
-        <p>Your total score is:</p>
-    </div>
-
-    <div class="scoreCounter"></div>
-
-
-            
 </div>        
     
 

@@ -4,27 +4,40 @@
 
 
 body {
-    background-image: url("../images/crystal.jpg");
+    background-image: url("../images/snowflakes.jpg");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Merkur;
+    src: url ('Merkur.otf')
 }
 
 .nameOfGame {
-    margin: 0 auto 10px;
+    /*margin: 0 auto 10px;*/
     width: 50%;
+    height: 100px;
     text-align: center;
-    background-color: blueviolet;
-    border: 3px solid white;
+    /*background-color: blueviolet;
+    border: 3px solid white;*/
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merkur', Arial, Helvetica, sans-serif;
+    font-size: 60px;
 }
+
+
+
 
 .instructions {
     margin: 0 auto 10px;
     width: 70%;
     text-align: center;
-    background-color:white;
-    border: 3px solid  blue;
-    border-radius: 10px;
-    color: blue;
+    background-color: lightslategray;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    /*border: 3px solid  blue;
+    border-radius: 10px;*/
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
 
@@ -32,51 +45,138 @@ body {
 
 
 .targetScore {
-    float: center;
-    left: 50%;
-    margin: 0 auto 10px;
-    width: 25%;
-    height: 100px;
+    /*float: center;
+    left: 50%;*/
+    /*margin: 0 auto;*/
+    /*width: 25%;*/
+    height: 120px;
     text-align: center;
-    background-color: blue;
+    background-color: transparent;
     border: 3px solid white;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-family: 'Merkur', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 10px;8
     
 }
+/*#targetNUmber {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+}*/
 
-.winsLoses {
-    
-    margin: 0 auto 10px;
+#sentence {
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.results {
+    /*margin: 0 auto;*/
     width: 25%;
     /*height: 100px;*/
     text-align: center;
-    background-color:rgb(43, 153, 226);
+    background-color: transparent;
     border: 3px solid white;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 5px;
+    line-height: 10px;
     
 }
 
-#buttons {
-    clear: left;
+#loses #wins {
+    /*float: left;
     margin: 0 auto 10px;
-    width: 70%;
-    height: 150px;
+    width: 25%;*/
+    height: 120px;
     text-align: center;
     background-color: transparent;
-    border: 3px solid blue;
+    border: 3px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+
+.userScoreCounter {
+    /*margin: 0 auto;*/
+    width: 25%;
+    height: 120px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.crystal {
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+    clear: left;
+    
+    margin: 0 auto 10px;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    background-color: transparent;
+    /*border: 3px solid blue;*/
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
-.totalScore {
+.gems {
+    width: 140px;
+    height: 140px;
+    /*display: inline;*/
+    margin: 5px;
+}
+
+#jewel1 {
+    background-image: url("../images/bluesf.jpg");
+    background-size: cover;
+    background-color:lightslategray;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+        
+}
+#jewel2 {
+    background-image: url("../images/blacksf.jpg");
+    background-size: cover;
+    background-color: lightslategray;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#jewel3 {
+    background-image: url("../images/purplesf.jpg");
+    background-size: cover;background-color: lightslategray;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#jewel4 {
+    background-image: url("../images/redsf.jpg");
+    background-size: cover;background-color: lightslategray;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+footer {
+    background-color: transparent;
+}
+
+/*.totalScore {
+    
     margin: 0 auto 10px;
-    width: 50%;
+    width: 25%;
     text-align: center;
     background-color: rgb(43, 153, 226);
     border: 3px solid white;
@@ -85,18 +185,6 @@ body {
     font-size: 15px;
     padding: 5px;
 
-}
+}*/
 
-.scoreCounter {
-    margin: 0 auto 10px;
-    width: 30%;
-    height: 120px;
-    text-align: center;
-    background-color: blueviolet;
-    border: 3px solid white;
-    border-radius: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
 
-}
