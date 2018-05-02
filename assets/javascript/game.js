@@ -25,15 +25,18 @@ var userScore = 0;
 function winner() {
     userScore === randomNumber;
     wins++;
-    $("#wins").text("YOU WIN!");
+    $("#theEnd").text("YOU WIN!");
+    $("#wins").text("Number of wins:" + wins);
     reset();
+    console.log("winner");
     
 }
 
 function loser() {
     userScore > randomNumber;
-    loses++
-    $("#sentence").text("YOU LOSE!");
+    loses++;
+    $("#theEnd").text("YOU LOSE..");
+    $("#loses").text("Number of loses:" + loses);
     reset();
 }
 
@@ -117,8 +120,7 @@ $("#jewel4").on("click", function() {
 
 
 //reset the game when user either matches target score or goes over target score, append to html doc
-$(".wins").text(wins)
-$(".loses").text(loses)
+
 
 function reset() {
 
@@ -130,6 +132,8 @@ function reset() {
     randomNumberBtn4 = Math.floor(Math.random()*11+1);
     userScore = 0;
     $(".totalScore").text(userScore);
+    $(".wins").text("winnwr");
+    $(".loses").text(loses);
 }
 
 
