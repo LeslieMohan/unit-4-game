@@ -41,7 +41,7 @@ function loser() {
 }
 
 
-
+//the buttons and their funtions
 
 $(".totalScore").text(userScore)
 
@@ -50,7 +50,7 @@ $("#jewel1").on("click", function() {
     userScore=userScore + randomNumberBtn1;//userScore + randomNumberBtn1;
     console.log(".totalScore=" + userScore);
     
-    //$(".totalScore").text(userScore);
+    $(".totalScore").text(userScore);
     console.log(userScore)
 
         //if win or lose situations
