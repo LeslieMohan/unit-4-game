@@ -20,22 +20,36 @@ var loses = 0;
 var userScore = 0;
 
 
+//winning and losing functions and the displays
 
-//wins
-//function wins() {
-    // (userScore == randomNumber)
-    //$("#sentence").append("YOU WIN!").innerHTML
+function winner() {
+    userScore === randomNumber;
+    wins++;
+    $("#wins").text("YOU WIN!");
+    reset();
+    
+}
+
+function loser() {
+    userScore > randomNumber;
+    loses++
+    $("#sentence").text("YOU LOSE!");
+    reset();
+}
 
 
-//loses
 
-$(".userScoreCounter").text(userScore)
 
-$("#jewel1").on("click", ".gems", function() {
-    var userScore = userScore + randomNumberBtn1;
-    console.log("new userScore=" + userScore);
-    $(".userScoreCounter").text(userScore);
+$(".totalScore").text(userScore)
+
+$("#jewel1").on("click", function() {
+
+    userScore=userScore + randomNumberBtn1;//userScore + randomNumberBtn1;
+    console.log(".totalScore=" + userScore);
+    
+    //$(".totalScore").text(userScore);
     console.log(userScore)
+
         //if win or lose situations
         if (userScore == randomNumber){
             winner();
@@ -43,12 +57,17 @@ $("#jewel1").on("click", ".gems", function() {
         else if (userScore > randomNumber) {
             loser();
         }
-
 })
-$("#jewel2").on("click",".gems", function() {
-    var userScore = userScore + randomNumberBtn2;
-    console.log("new userScore=" + userScore);
-    $(".userScoreCounter").text(userScore);
+
+
+$("#jewel2").on("click", function() {
+
+    userScore=userScore + randomNumberBtn2;//userScore + randomNumberBtn2;
+    console.log(".totalScore=" + userScore);
+    
+    $(".totalScore").text(userScore);
+    console.log(userScore)
+
         //if win or lose situations
         if (userScore == randomNumber){
             winner();
@@ -56,34 +75,47 @@ $("#jewel2").on("click",".gems", function() {
         else if (userScore > randomNumber) {
             loser();
         }
-
-})
-$("#jewel3").on("click",".gems", function() {
-    var userScore = userScore + randomNumberBtn3;
-    console.log("new userScore=" + userScore);
-    $(".userScoreCounter").text(userScore);
-        //if win or lose situations
-        if (userScore == randomNumber){
-            winner();
-        }
-        else if (userScore > randomNumber) {
-            loser();
-        }
-
-})
-$("#jewel4").on("click", ".gems", function() {
-    var userScore = userScore + randomNumberBtn4;
-    console.log("new userScore=" + userScore);
-    $(".userScoreCounter").text(userScore);
-        //if win or lose situations
-        if (userScore == randomNumber){
-            winner();
-        }
-        else if (userScore > randomNumber) {
-            loser();
-        }
-
 });
+
+
+$("#jewel3").on("click", function() {
+
+    userScore=userScore + randomNumberBtn3;//userScore + randomNumberBtn2;
+    console.log(".totalScore=" + userScore);
+    
+    $(".totalScore").text(userScore);
+    console.log(userScore)
+
+        //if win or lose situations
+        if (userScore == randomNumber){
+            winner();
+        }
+        else if (userScore > randomNumber) {
+            loser();
+        }
+});
+
+$("#jewel4").on("click", function() {
+
+    userScore=userScore + randomNumberBtn4;//userScore + randomNumberBtn2;
+    console.log(".totalScore=" + userScore);
+    
+    $(".totalScore").text(userScore);
+    console.log(userScore)
+
+        //if win or lose situations
+        if (userScore == randomNumber){
+            winner();
+        }
+        else if (userScore > randomNumber) {
+            loser();
+        }
+});
+
+
+
+
+
 //reset the game when user either matches target score or goes over target score, append to html doc
 $(".wins").text(wins)
 $(".loses").text(loses)
@@ -97,7 +129,7 @@ function reset() {
     randomNumberBtn3= Math.floor(Math.random()*11+1);
     randomNumberBtn4 = Math.floor(Math.random()*11+1);
     userScore = 0;
-    $('#finalTotal').text(userScore);
+    $(".totalScore").text(userScore);
 }
 
 
