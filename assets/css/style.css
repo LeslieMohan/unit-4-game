@@ -196,18 +196,9 @@ footer {
     background-color: transparent;
 }
 
-/*.totalScore {
-    
-    margin: 0 auto 10px;
-    width: 25%;
-    text-align: center;
-    background-color: rgb(43, 153, 226);
-    border: 3px solid white;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 5px;
-
-}*/
-
+@media only screen and (max-width: 775px) {
+    h1 {
+       line-height: 60px; 
+    }
+}
 
